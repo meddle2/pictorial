@@ -14,10 +14,9 @@
     <% @pins.each do |pin| %>
       <tr>
         <td><%= pin.description %></td>
-        <td> | </td>
-        <td><%= link_to 'Show', pin, class:'btn btn-success btn-xs' %></td>
+        <td><%= link_to 'Show', pin, class:'btn btn-info btn-xs' %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin), class:'btn btn-primary btn-xs' %></td>
-        <td><%= link_to 'Destroy', pin, class:'btn btn-warning btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', pin, class:'btn btn-danger btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Pin', new_pin_path %>
+<%= link_to 'New Pin', new_pin_path, class:'btn btn-success btn-lg' %>
