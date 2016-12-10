@@ -1,7 +1,7 @@
 <div class="panel-heading"><p id="notice"><%= notice %></p></div>
 <div class="panel-body">
 <p>
-  <strong>Description:</strong>
+  <%= image_tag @pin.image.url(:medium)%>
   <%= @pin.description %>
 </p>
 </div>
